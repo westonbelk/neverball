@@ -42,6 +42,10 @@ const GLubyte gui_blu[4] = { 0x00, 0x00, 0xFF, 0xFF };  /* Blue   */
 const GLubyte gui_blk[4] = { 0x00, 0x00, 0x00, 0xFF };  /* Black  */
 const GLubyte gui_gry[4] = { 0x55, 0x55, 0x55, 0xFF };  /* Gray   */
 const GLubyte gui_shd[4] = { 0x00, 0x00, 0x00, 0x80 };  /* Shadow */
+const GLubyte gui_org[4] = { 0xF6, 0x67, 0x33, 0xFF };  /* Clemson Orange  */
+const GLubyte gui_pur[4] = { 0x52, 0x2D, 0x80, 0xFF };  /* Regalia (Purple)  */
+const GLubyte gui_brn[4] = { 0x56, 0x2E, 0x19, 0xFF };  /* Centennial Oak (Brown)  */
+
 
 /*---------------------------------------------------------------------------*/
 

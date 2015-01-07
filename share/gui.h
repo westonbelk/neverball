@@ -55,6 +55,9 @@ extern const GLubyte gui_blu[4];
 extern const GLubyte gui_grn[4];
 extern const GLubyte gui_blk[4];
 extern const GLubyte gui_gry[4];
+extern const GLubyte gui_org[4];
+extern const GLubyte gui_pur[4];
+extern const GLubyte gui_brn[4];
 
 enum trunc
 {

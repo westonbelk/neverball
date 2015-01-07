@@ -163,6 +163,10 @@ char *hole_player(int p)
     if (p == 2 && 2 <= party) return _("P2");
     if (p == 3 && 3 <= party) return _("P3");
     if (p == 4 && 4 <= party) return _("P4");
+    if (p == 5 && 5 <= party) return _("P5");
+    if (p == 6 && 6 <= party) return _("P6");
+    if (p == 7 && 7 <= party) return _("P7");
+    if (p == 8 && 8 <= party) return _("P8");
 
     return NULL;
 }

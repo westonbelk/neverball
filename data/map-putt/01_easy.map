@@ -242,29 +242,53 @@
 }
 // entity 6
 {
+"classname" "info_player_start"
+"radius" "0.0625"
+"origin" "64 64 24"
+}
+// entity 7
+{
+"classname" "info_player_start"
+"radius" "0.0625"
+"origin" "64 64 24"
+}
+// entity 8
+{
+"classname" "info_player_start"
+"radius" "0.0625"
+"origin" "64 64 24"
+}
+// entity 9
+{
+"classname" "info_player_start"
+"radius" "0.0625"
+"origin" "64 64 24"
+}
+// entity 10
+{
 "classname" "target_position"
 "origin" "64 704 8"
 "targetname" "t1"
 }
-// entity 7
+// entity 11
 {
 "classname" "info_player_intermission"
 "origin" "-128 320 256"
 "target" "t1"
 }
-// entity 8
+// entity 12
 {
 "classname" "target_position"
 "targetname" "t2"
 "origin" "64 248 8"
 }
-// entity 9
+// entity 13
 {
 "classname" "info_player_intermission"
 "target" "t2"
 "origin" "320 -176 256"
 }
-// entity 10
+// entity 14
 {
 "classname" "info_player_deathmatch"
 "origin" "64 704 8"

@@ -58,6 +58,10 @@ static int score_card(const char  *title,
     int p2 = (curr_party() >= 2) ? 1 : 0;
     int p3 = (curr_party() >= 3) ? 1 : 0;
     int p4 = (curr_party() >= 4) ? 1 : 0;
+    int p5 = (curr_party() >= 5) ? 1 : 0;
+    int p6 = (curr_party() >= 6) ? 1 : 0;
+    int p7 = (curr_party() >= 7) ? 1 : 0;
+    int p8 = (curr_party() >= 8) ? 1 : 0;
 
     int i;
     int n = curr_count() - 1;
@@ -78,7 +82,11 @@ static int score_card(const char  *title,
                 if (p2) gui_label(kd, hole_out(2), 0, gui_grn, gui_wht);
                 if (p3) gui_label(kd, hole_out(3), 0, gui_blu, gui_wht);
                 if (p4) gui_label(kd, hole_out(4), 0, gui_yel, gui_wht);
-
+                if (p5) gui_label(kd, hole_out(5), 0, gui_org, gui_wht);
+                if (p6) gui_label(kd, hole_out(6), 0, gui_pur, gui_wht);
+                if (p7) gui_label(kd, hole_out(7), 0, gui_blk, gui_wht);
+                if (p8) gui_label(kd, hole_out(8), 0, gui_brn, gui_wht);
+                
                 gui_set_rect(kd, GUI_RGT);
             }
 
@@ -93,6 +101,10 @@ static int score_card(const char  *title,
                         if (p2) gui_label(ld, hole_score(i, 2), 0, gui_grn, gui_wht);
                         if (p3) gui_label(ld, hole_score(i, 3), 0, gui_blu, gui_wht);
                         if (p4) gui_label(ld, hole_score(i, 4), 0, gui_yel, gui_wht);
+                        if (p5) gui_label(ld, hole_score(i, 5), 0, gui_org, gui_wht);
+                        if (p6) gui_label(ld, hole_score(i, 6), 0, gui_pur, gui_wht);
+                        if (p7) gui_label(ld, hole_score(i, 7), 0, gui_blk, gui_wht);
+                        if (p8) gui_label(ld, hole_score(i, 8), 0, gui_brn, gui_wht);
                     }
 
                 gui_set_rect(kd, GUI_LFT);
@@ -109,7 +121,11 @@ static int score_card(const char  *title,
                     if (p2) gui_label(ld, _("P2"),  0, gui_grn, gui_wht);
                     if (p3) gui_label(ld, _("P3"),  0, gui_blu, gui_wht);
                     if (p4) gui_label(ld, _("P4"),  0, gui_yel, gui_wht);
-
+                    if (p5) gui_label(ld, _("P5"),  0, gui_org, gui_wht);
+                    if (p6) gui_label(ld, _("P6"),  0, gui_pur, gui_wht);
+                    if (p7) gui_label(ld, _("P7"),  0, gui_blk, gui_wht);
+                    if (p8) gui_label(ld, _("P8"),  0, gui_brn, gui_wht);
+                    
                     gui_set_rect(ld, GUI_ALL);
                 }
             }
@@ -127,6 +143,10 @@ static int score_card(const char  *title,
                 if (p2) gui_label(kd, hole_tot(2), 0, gui_grn, gui_wht);
                 if (p3) gui_label(kd, hole_tot(3), 0, gui_blu, gui_wht);
                 if (p4) gui_label(kd, hole_tot(4), 0, gui_yel, gui_wht);
+                if (p5) gui_label(kd, hole_tot(5), 0, gui_org, gui_wht);
+                if (p6) gui_label(kd, hole_tot(6), 0, gui_pur, gui_wht);
+                if (p7) gui_label(kd, hole_tot(7), 0, gui_blk, gui_wht);
+                if (p8) gui_label(kd, hole_tot(8), 0, gui_brn, gui_wht);
 
                 gui_set_rect(kd, GUI_ALL);
             }
@@ -139,6 +159,10 @@ static int score_card(const char  *title,
                 if (p2) gui_label(kd, hole_in(2), 0, gui_grn, gui_wht);
                 if (p3) gui_label(kd, hole_in(3), 0, gui_blu, gui_wht);
                 if (p4) gui_label(kd, hole_in(4), 0, gui_yel, gui_wht);
+                if (p5) gui_label(kd, hole_in(5), 0, gui_org, gui_wht);
+                if (p6) gui_label(kd, hole_in(6), 0, gui_pur, gui_wht);
+                if (p7) gui_label(kd, hole_in(7), 0, gui_blk, gui_wht);
+                if (p8) gui_label(kd, hole_in(8), 0, gui_brn, gui_wht);
 
                 gui_set_rect(kd, GUI_RGT);
             }
@@ -154,6 +178,10 @@ static int score_card(const char  *title,
                         if (p2) gui_label(ld, hole_score(i, 2), 0, gui_grn, gui_wht);
                         if (p3) gui_label(ld, hole_score(i, 3), 0, gui_blu, gui_wht);
                         if (p4) gui_label(ld, hole_score(i, 4), 0, gui_yel, gui_wht);
+                        if (p5) gui_label(ld, hole_score(i, 5), 0, gui_org, gui_wht);
+                        if (p6) gui_label(ld, hole_score(i, 6), 0, gui_pur, gui_wht);
+                        if (p7) gui_label(ld, hole_score(i, 7), 0, gui_blk, gui_wht);
+                        if (p8) gui_label(ld, hole_score(i, 8), 0, gui_brn, gui_wht);
                     }
 
                 gui_set_rect(kd, GUI_LFT);
@@ -170,6 +198,10 @@ static int score_card(const char  *title,
                     if (p2) gui_label(ld, _("P2"),  0, gui_grn, gui_wht);
                     if (p3) gui_label(ld, _("P3"),  0, gui_blu, gui_wht);
                     if (p4) gui_label(ld, _("P4"),  0, gui_yel, gui_wht);
+                    if (p1) gui_label(ld, _("P5"),  0, gui_org, gui_wht);
+                    if (p2) gui_label(ld, _("P6"),  0, gui_pur, gui_wht);
+                    if (p3) gui_label(ld, _("P7"),  0, gui_blk, gui_wht);
+                    if (p4) gui_label(ld, _("P8"),  0, gui_brn, gui_wht);
 
                     gui_set_rect(ld, GUI_ALL);
                 }
@@ -486,7 +518,11 @@ static int course_buttn(int b, int d)
 #define PARTY_2 2
 #define PARTY_3 3
 #define PARTY_4 4
-#define PARTY_B 5
+#define PARTY_5 5
+#define PARTY_6 6
+#define PARTY_7 7
+#define PARTY_8 8
+#define PARTY_B 9
 
 static int party_action(int i)
 {
@@ -512,6 +548,26 @@ static int party_action(int i)
         if (hole_goto(1, 4))
             goto_state(&st_next);
         break;
+    case PARTY_5:
+        audio_play(AUD_MENU, 1.f);
+        if (hole_goto(1, 5))
+            goto_state(&st_next);
+        break;
+    case PARTY_6:
+        audio_play(AUD_MENU, 1.f);
+        if (hole_goto(1, 6))
+            goto_state(&st_next);
+        break;
+    case PARTY_7:
+        audio_play(AUD_MENU, 1.f);
+        if (hole_goto(1, 7))
+            goto_state(&st_next);
+        break;
+    case PARTY_8:
+        audio_play(AUD_MENU, 1.f);
+        if (hole_goto(1, 8))
+            goto_state(&st_next);
+        break;
     case PARTY_B:
         audio_play(AUD_MENU, 1.f);
         goto_state(&st_course);
@@ -531,6 +587,10 @@ static int party_enter(struct state *st, struct state *prev)
 
         if ((jd = gui_harray(id)))
         {
+            int p8 = gui_state(jd, "8", GUI_LRG, PARTY_8, 0);
+            int p7 = gui_state(jd, "7", GUI_LRG, PARTY_7, 0);
+            int p6 = gui_state(jd, "6", GUI_LRG, PARTY_6, 0);
+            int p5 = gui_state(jd, "5", GUI_LRG, PARTY_5, 0);
             int p4 = gui_state(jd, "4", GUI_LRG, PARTY_4, 0);
             int p3 = gui_state(jd, "3", GUI_LRG, PARTY_3, 0);
             int p2 = gui_state(jd, "2", GUI_LRG, PARTY_2, 0);
@@ -540,6 +600,10 @@ static int party_enter(struct state *st, struct state *prev)
             gui_set_color(p2, gui_grn, gui_wht);
             gui_set_color(p3, gui_blu, gui_wht);
             gui_set_color(p4, gui_yel, gui_wht);
+            gui_set_color(p5, gui_org, gui_wht);
+            gui_set_color(p6, gui_pur, gui_wht);
+            gui_set_color(p7, gui_blk, gui_wht);
+            gui_set_color(p8, gui_brn, gui_wht);
 
             gui_focus(p1);
         }
@@ -755,6 +819,22 @@ static int next_enter(struct state *st, struct state *prev)
                 break;
             case 4:
                 gui_label(jd, "4", GUI_LRG, gui_yel, gui_wht);
+                if (curr_party() > 1) audio_play(AUD_PLAYER4, 1.f);
+                break;
+            case 5:
+                gui_label(jd, "5", GUI_LRG, gui_red, gui_wht);
+                if (curr_party() > 1) audio_play(AUD_PLAYER1, 1.f);
+                break;
+            case 6:
+                gui_label(jd, "6", GUI_LRG, gui_grn, gui_wht);
+                if (curr_party() > 1) audio_play(AUD_PLAYER2, 1.f);
+                break;
+            case 7:
+                gui_label(jd, "7", GUI_LRG, gui_blu, gui_wht);
+                if (curr_party() > 1) audio_play(AUD_PLAYER3, 1.f);
+                break;
+            case 8:
+                gui_label(jd, "8", GUI_LRG, gui_yel, gui_wht);
                 if (curr_party() > 1) audio_play(AUD_PLAYER4, 1.f);
                 break;
             }
