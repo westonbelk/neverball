@@ -198,10 +198,10 @@ static int score_card(const char  *title,
                     if (p2) gui_label(ld, _("P2"),  0, gui_grn, gui_wht);
                     if (p3) gui_label(ld, _("P3"),  0, gui_blu, gui_wht);
                     if (p4) gui_label(ld, _("P4"),  0, gui_yel, gui_wht);
-                    if (p1) gui_label(ld, _("P5"),  0, gui_org, gui_wht);
-                    if (p2) gui_label(ld, _("P6"),  0, gui_pur, gui_wht);
-                    if (p3) gui_label(ld, _("P7"),  0, gui_blk, gui_wht);
-                    if (p4) gui_label(ld, _("P8"),  0, gui_brn, gui_wht);
+                    if (p5) gui_label(ld, _("P5"),  0, gui_org, gui_wht);
+                    if (p6) gui_label(ld, _("P6"),  0, gui_pur, gui_wht);
+                    if (p7) gui_label(ld, _("P7"),  0, gui_blk, gui_wht);
+                    if (p8) gui_label(ld, _("P8"),  0, gui_brn, gui_wht);
 
                     gui_set_rect(ld, GUI_ALL);
                 }
